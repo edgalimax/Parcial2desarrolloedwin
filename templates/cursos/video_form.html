@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Nuevo Video{% endblock %}
+{% block content %}
+<h1 class="h3 mb-3 text-primary"><i class="bi bi-plus-circle"></i> Nuevo Video</h1>
+<div class="card">
+  <div class="card-body">
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button class="btn btn-success"><i class="bi bi-save"></i> Guardar</button>
+      <a href="{% url 'videos_list' %}" class="btn btn-secondary">Cancelar</a>
+    </form>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Base de datos SQLite
+db.sqlite3
+
+# Entornos virtuales
+venv/
+env/
+
+# Archivos de migraciones compilados
+*.sqlite3
+
+# Archivos de configuración locales
+*.log
+*.pot
+
+# Archivos de Django
+/staticfiles/
+/media/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
